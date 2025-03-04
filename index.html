@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mateusz Oleksy Homepage</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="nofollow, noindex">
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+    <div class="container my-5 p-2">
+        <header class="row border-white border-3 rounded bg-opacity-25 shadow-lg">
+            <div class="col-6">
+                <h1 class="text-primary d-inline-block mx-3" id="clock">12:00:00</h1>
+            </div>
+            <div class="col-6 align-self-end text-end">
+                <h1 class="text-primary d-inline-block justify-content-end mx-3" id="title">Mateusz Oleksy</h1>
+            </div>
+        </header>
+        <main>
+
+            <section>
+                <div class="row my-3 bg-gradient rounded p-2 shadow-lg">
+                    <div class="col-6 text-center align-self-center align-items-center" id="about">
+                        <h2 class="text-white cinzel-cinzel">A few words about me...</h2>
+                        <h4 class="text-white-50">Hello! I am Mateusz Oleksy (you can call me Matt), Electronics and Telecomuniacations student at AGH, passionate about electronics, IT and telecomunications</h4>
+                    </div>
+                    <div class="col-6 text-center">
+                        <img src="jeff2.jpg" alt="" class="img-thumbnail mx-auto" id="my_profile">
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <section>
+                    <div class="row p-2 my-2">
+                        <article class="col-lg-4 position-sticky card bg-dark-subtle p-3 my-4 border-2 border-white rounded-top-5">
+                            <div class="card-body">
+                                <h2 class="text-black card-title">
+                                    The newest research in...
+                                </h2>
+                                <h4 class="text-black-50 card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas pellentesque metus id vulputate. Phasellus ut consectetur dolor. Aliquam ipsum nisi, imperdiet quis orci sit amet, porttitor euismod risus. Donec nec tristique nisl. Mauris aliquet vestibulum leo, commodo feugiat ipsum fringilla id. Nam id nisl eu nulla vestibulum egestas ac rhoncus arcu. Mauris iaculis nunc felis, ac scelerisque nisi efficitur at.
+                                </h4>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 position-sticky">
+                            <h2 class="text-white">
+                                The newest research in...
+                            </h2>
+                            <h4 class="text-white-50">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </h4>
+                        </article>
+                        <article class="col-lg-4 position-sticky">
+                            <h2 class="text-white">
+                                The newest research in...
+                            </h2>
+                            <h4 class="text-white-50">
+                                Lorem ipsum dolor sit amet, consectetur adipipsu.. Nam id nisl eu nulla vestibulum egestas ac rhoncus arcu. Mauris iaculis nunc felis, ac scelerisque nisi efficitur at.
+                            </h4>
+                        </article>
+                        <article class="col-lg-4 position-sticky">
+                            <h2 class="text-white">
+                                The newest research in...
+                            </h2>
+                            <h4 class="text-white-50">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas pellentesque metus id vulputate. Phasellus ut consectetur dolor. Aliquam ipsum nisi, imperdiet quis orci sit amet, porttitor euismod risus. Donec nec tristique nisl. Mauris aliquet vestibulum leo, commodo feugiat ipsum fringilla id. Nam id nisl eu nulla vestibulum egestas ac rhoncus arcu. Mauris iaculis nunc felis, ac scelerisque nisi efficitur at.
+                            </h4>
+                        </article>
+                        <article class="col-lg-4 position-sticky">
+                            <h2 class="text-white">
+                                The newest research in...
+                            </h2>
+                            <h4 class="text-white-50">
+                                Lorem ipsum dolor sit amet, consectetur
+                            </h4>
+                        </article>
+                        <article class="col-lg-4 position-sticky">
+                            <h2 class="text-white">
+                                The newest research in...
+                            </h2>
+                            <h4 class="text-white-50">
+                                Lorem ipsum dolor sit amet, consectetur adipipsu.. Nam id nisl eu nulla vestibulum egestas ac rhoncus arcu. Mauris iaculis nunc felis, ac scelerisque nisi efficitur at.
+                            </h4>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="text-center bg-opacity-25 text-white-50">
+            <h1>© Mateusz Oleksy
+            <span id="date">2023</span>
+            </h1>
+        </footer>
+        <aside id="socials">
+            <a href="https://github.com/mateuszoleksy"><span class="icon-github"></span></a>
+            <a href="https://github.com/mateuszoleksy"><span class="icon-linkedin"></span></a>
+        </aside>
+    </div>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+
+        let date = new Date();
+        const clock = document.getElementById("clock")
+        const dateElem = document.getElementById("date")
+        dateElem.innerText = date.getFullYear()+'';
+
+        function toDigits(number)
+        {
+            if (number/10 < 1)
+                return '0' + number;
+            else
+                return number;
+        }
+        function e()
+        {
+
+            clock.innerText = toDigits(date.getHours()) + ':' + toDigits(date.getMinutes()) + ':' + toDigits(date.getSeconds()) ;
+        }
+
+        window.setInterval(e, 1);
+    </script>
+</body>
+</html>
