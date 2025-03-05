@@ -3,12 +3,13 @@ header, aside, nav, main, section, article
     display: block;
 }
 
-.cinzel-cinzel {
-             font-family: "Cinzel", serif;
-             font-optical-sizing: auto;
-             font-weight: 400;
-             font-style: normal;
-         }
+
+.inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
 
 .navi
 {
