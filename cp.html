@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link href="css/fontello.css" rel="stylesheet">
 </head>
-<body class="bg-dark">
+<body class="bg-dark" id="main_div">
     <div class="container my-5 p-5">
-        <header class="row border-white border-3 rounded shadow align-items-center align-middle">
+        <header class="row rounded shadow align-items-center align-middle py-3 border-0 navi">
             <div class="col-6">
                 <div id="clock">
                     <div id="hour" class="hand"></div>
@@ -27,77 +27,117 @@
                 </div>
             </div>
             <div class="col-6 text-end align-items-center align-middle">
-                <h1 class="text-primary d-inline-block justify-content-end mx-3" id="title">Mateusz Oleksy</h1>
+                <h1 class="text-primary d-inline-block justify-content-end mx-3" id="title"><span class="icon-home"></span>Mateusz Oleksy</h1>
             </div>
         </header>
         <main>
 
             <section>
-                <div class="row my-5 bg-gradient rounded p-2 my-2 shadow-lg">
+                <div class="row my-5 navi rounded p-2 my-2 shadow-lg">
                     <div class="col-lg-6 text-center align-self-center align-items-center" id="about">
-                        <h2 class="text-white cinzel-cinzel"><span class="icon-star">A few words about me...</h2>
+                        <h2 class="text-white cinzel-cinzel"><span class="icon-star"></span>About me</h2>
                         <h4 class="text-white-50">Hello! I am Mateusz Oleksy (you can call me Matt), Electronics and Telecomuniacations student at AGH, passionate about electronics, IT and telecomunications</h4>
                     </div>
                     <div class="col-lg-6 text-center p-2 my-2">
-                        <img src="jeff2.jpg" alt="" class="img-thumbnail mx-auto" id="my_profile">
+                        <img src="jeff2.jpg" alt="" class="img-fluid mx-auto border-black border-2 custom-shape" id="my_profile">
                     </div>
                 </div>
             </section>
-            <div class="row">
-                <section>
-                    <div class="row p-2 my-2">
-                        <article class="col-lg-4 d-flex flex-wrap card bg-dark-subtle p-3 my-4 border-2 border-white rounded-end-5">
-                            <div class="card-body">
-                                <h2 class="text-black card-title">
-                                    The newest research in...
-                                </h2>
-                                <h4 class="text-black-50 card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas pellentesque metus id vulputate. Phasellus ut consectetur dolor. Aliquam ipsum nisi, imperdiet quis orci sit amet, porttitor euismod risus. Donec nec tristique nisl. Mauris aliquet vestibulum leo, commodo feugiat ipsum fringilla id. Nam id nisl eu nulla vestibulum egestas ac rhoncus arcu. Mauris iaculis nunc felis, ac scelerisque nisi efficitur at.
-                                </h4>
+            <div class="row py-5 navi">
+                <section class="col-lg-8">
+                    <div class="row g-5" data-masonry='{"percentPosition": true}'>
+                        <article class="col-lg-4 m-0 p-2">
+                            <div class="card bg-black shadow rounded-end-5 mx-2">
+                                <div class="card-body">
+                                    <h2 class="text-white card-title cinzel-cinzel">
+                                        My frontend skills
+                                    </h2>
+                                    <h4 class="text-white-50 card-text">
+                                         HTML<hr/>CSS<hr />JavaScript<hr />Bootstrap<hr />PHP<hr />MySQL<hr />
+                                    </h4>
+                                </div>
                             </div>
                         </article>
-                        <article class="col-lg-4 d-flex flex-wrap ">
-                            <h2 class="text-white">
-                                The newest research in...
-                            </h2>
-                            <h4 class="text-white-50">
-                                Lorem ipsum dolor sit amet, consectetur
-                            </h4>
+                        <article class="col-lg-4 m-0 p-2">
+                            <div class="card bg-black rounded-end-3 shadow mx-2">
+                                <div class="card-body">
+                                    <h2 class="text-white card-title cinzel-cinzel">
+                                        Interested in python skills?
+                                    </h2>
+                                    <h4 class="text-white-50 card-text my-3">
+                                         I had one course during my studies lifetime. I had began with python and javascript when I was 11 years old.
+                                    </h4>
+                                </div>
+                            </div>
                         </article>
-                        <article class="col-lg-4 d-flex flex-wrap ">
-                            <h2 class="text-white">
-                                The newest research in...
-                            </h2>
-                            <h4 class="text-white-50">
-                                Lorem ipsum dolor sit amet, consectetur adipipsu.. Nam id nisl eu nulla vestibulum egestas ac rhoncus arcu. Mauris iaculis nunc felis, ac scelerisque nisi efficitur at.
-                            </h4>
+                        <article class="col-lg-4 m-0 p-2">
+                            <div class="card bg-black rounded-end-3 shadow mx-2">
+                                <div class="card-body">
+                                    <h2 class="text-white card-title cinzel-cinzel">
+                                        C++
+                                    </h2>
+                                    <h4 class="text-white-50 card-text my-3">
+                                        I run through nearly three courses during studies. C++ OOP programming is available.
+                                    </h4>
+                                </div>
+                            </div>
                         </article>
-                        <article class="col-lg-4 d-flex flex-wrap ">
-                            <h2 class="text-white">
-                                The newest research in...
-                            </h2>
-                            <h4 class="text-white-50">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas pellentesque metus id vulputate. Phasellus ut consectetur dolor. Aliquam ipsum nisi, imperdiet quis orci sit amet, porttitor euismod risus. Donec nec tristique nisl. Mauris aliquet vestibulum leo, commodo feugiat ipsum fringilla id. Nam id nisl eu nulla vestibulum egestas ac rhoncus arcu. Mauris iaculis nunc felis, ac scelerisque nisi efficitur at.
-                            </h4>
+                        <article class="col-lg-4 m-0 p-2">
+                            <div class="card bg-black rounded-end-3 shadow mx-2">
+                                <div class="card-body">
+                                    <h2 class="text-white card-title cinzel-cinzel">
+                                        My passions!
+                                    </h2>
+                                    <img src="20250304_220533.jpg" alt="" class="card-img">
+                                    <h4 class="text-white-50 card-text">
+                                        In a while I love playing my acoustic guitar
+                                    </h4>
+                                </div>
+                            </div>
                         </article>
-                        <article class="col-lg-4 d-flex flex-wrap ">
-                            <h2 class="text-white">
-                                The newest research in...
-                            </h2>
-                            <h4 class="text-white-50">
-                                Lorem ipsum dolor sit amet, consectetur
-                            </h4>
+                        <article class="col-lg-4 m-0 p-2">
+                            <div class="card bg-black rounded-end-3 mx-2">
+                                <div class="card-body">
+                                    <h2 class="text-white card-title cinzel-cinzel">
+                                        The newest research in...
+                                    </h2>
+                                    <h4 class="text-white-50 card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. us arcu. Mauris iaculis nunc felis, ac scelerisque nisi efficitur at.
+                                    </h4>
+                                </div>
+                            </div>
                         </article>
-                        <article class="col-lg-4 d-flex flex-wrap ">
-                            <h2 class="text-white">
-                                The newest research in...
-                            </h2>
-                            <h4 class="text-white-50">
-                                Lorem ipsum dolor sit amet, consectetur adipipsu.. Nam id nisl eu nulla vestibulum egestas ac rhoncus arcu. Mauris iaculis nunc felis, ac scelerisque nisi efficitur at.
-                            </h4>
+                        <article class="col-lg-4 m-0 p-2">
+                            <div class="card bg-black shadow rounded-end-3 mx-2">
+                                <div class="card-body">
+                                    <h2 class="text-white card-title cinzel-cinzel">
+                                        The newest research in...
+                                    </h2>
+                                    <h4 class="text-white-50 card-text">
+                                       Hello world
+                                    </h4>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 m-0 p-2">
+                            <div class="card bg-black shadow rounded-end-3 mx-2">
+                                <div class="card-body">
+                                    <h2 class="text-white card-title cinzel-cinzel">
+                                        I like music, almost all genres
+                                    </h2>
+                                    <h4 class="text-white-50 card-text">
+
+                                    </h4>
+                                </div>
+                            </div>
                         </article>
                     </div>
                 </section>
+                <div class="col-lg-4">
+                    <div class="row shadow" id="repo-container">
+                        <h2 class="text-white m-3 mt-0">My repos <span class="icon-github"></span></h2>
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="text-center bg-opacity-25 text-white-50">
@@ -106,11 +146,35 @@
             </h1>
         </footer>
         <aside id="socials">
-            <a href="https://github.com/mateuszoleksy"><span class="icon-github"></span></a>
-            <a href="https://github.com/mateuszoleksy"><span class="icon-linkedin"></span></a>
+            <a href="https://github.com/mateuszoleksy" target="_blank"><span class="icon-github"></span></a>
+            <a href="https://github.com/mateuszoleksy" target="_blank"><span class="icon-linkedin"></span></a>
+            <a href="https://open.spotify.com/user/yu6oy4z1dfud1zs42iko5bq03" target="_blank"><span class="icon-spotify"></span></a>
         </aside>
     </div>
     <style>
+
+        .custom-shape {
+            width: 300px;
+            height: 300px;
+        }
+
+        @keyframes flicker_box {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                box-shadow:
+                        0 0 7px #fff,
+                        0 0 10px #fff,
+                        0 0 21px #fff,
+                        0 0 42px #5271ff,
+                        0 0 82px #5271ff,
+                        0 0 92px #5271ff,
+                        0 0 102px #5271ff,
+                        0 0 151px #5271ff;
+            }
+            20%, 24%, 55% {
+                box-shadow: none;
+            }
+        }
+
         #clock
         {
             width: 100px;
@@ -120,10 +184,16 @@
             background-color: white;
             border-radius: 50%;
             margin-left: 25%;
-            box-shadow:  0 0 7px #fff,
-            0 0 10px #fff,
-            0 0 21px #fff,
-            0 0 42px #0fa;
+            animation: flicker_box 2s infinite alternate;
+            box-shadow:
+                    0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px #5271ff,
+                    0 0 82px #5271ff,
+                    0 0 92px #5271ff,
+                    0 0 102px #5271ff,
+                    0 0 151px #5271ff;
         }
 
 
@@ -238,6 +308,35 @@
             ratio = ratio * 360;
             element.style.setProperty("--rotation", ratio);
         }
+
+        async function getGitHubRepos() {
+            const username = "mateuszoleksy";
+            const response = await fetch(`https://api.github.com/users/${username}/repos`);
+            const repos = await response.json();
+
+            const repoContainer = document.getElementById("repo-container");
+
+            let count = 0;
+
+            repos.forEach(repo => {
+                const repoCard = `
+        <div class="col-12">
+          <div class="card mb-3 bg-black text-white rounded-5">
+            <div class="card-body">
+              <h5 class="card-title"><a href="${repo.html_url}" target="_blank">${repo.name}</a></h5>
+              <p class="card-text">${repo.description || "Brak opisu"}</p>
+              <span class="badge bg-primary">⭐ ${repo.stargazers_count}</span>
+            </div>
+          </div>
+        </div>`;
+                count++;
+                if (count < 8)
+                    repoContainer.innerHTML += repoCard;
+            });
+        }
+
+        getGitHubRepos();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 </body>
 </html>
