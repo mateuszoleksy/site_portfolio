@@ -16,7 +16,7 @@
 <body class="bg-dark" id="main_div">
     <div class="container my-5 p-5">
         <header class="row rounded shadow align-items-center align-middle py-3 border-0 navi">
-            <div class="col-6">
+            <div class="col-5 col-xl-6">
                 <div id="clock">
                     <div id="hour" class="hand"></div>
                     <div id="minute" class="hand"></div>
@@ -26,20 +26,31 @@
 
                 </div>
             </div>
-            <div class="col-6 text-end align-items-center align-middle">
-                <h1 class="text-primary d-inline-block justify-content-end mx-3" id="title"><span class="icon-home"></span>Mateusz Oleksy</h1>
+            <div class="col-7 col-xl-6 text-end align-items-center align-middle">
+                <h1 class="text-primary d-inline-block justify-content-end mx-3 fs-2" id="title"><span class="icon-home d-none d-lg-inline"></span>Mateusz Oleksy <button onclick="switchButton()" id="btn_switch" class="d-inline-block mt-2"><span class="icon-toggle-on" id="icon_switch"></span></button></h1>
             </div>
         </header>
         <main>
 
             <section>
                 <div class="row my-5 navi rounded p-2 my-2 shadow-lg">
-                    <div class="col-lg-6 text-center align-self-center align-items-center" id="about">
-                        <h2 class="text-white cinzel-cinzel"><span class="icon-star"></span>About me</h2>
-                        <h4 class="text-white-50">Hello! I am Mateusz Oleksy (you can call me Matt), Electronics and Telecomuniacations student at AGH, passionate about electronics, IT and telecomunications</h4>
+                    <div class="col-lg-6 text-start align-self-center align-items-center text-white" id="about">
+                        <h2 class="cinzel-cinzel d-inline"><span class="icon-star"></span>About me</h2>
+                        <h4 class="text-opacity-50 d-inline">Hello! I am Mateusz Oleksy (you can call me Matt), Electronics and Telecomuniacations student at AGH, passionate about electronics, IT and telecomunications</h4>
                     </div>
                     <div class="col-lg-6 text-center p-2 my-2">
-                        <img src="jeff2.jpg" alt="" class="img-fluid mx-auto border-black border-2 custom-shape" id="my_profile">
+                        <img src="jeff2.jpg" alt="" class="img-fluid mx-auto border-black border-2 custom-shape m-2 m-lg-0" id="my_profile">
+                        <img src="1.jpg" alt="" class="img-fluid mx-auto border-black border-2 custom-shape m-2 m-lg-0" id="my_profile2">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row my-5 navi rounded p-2 my-2 shadow-lg">
+                    <div class="col-12 text-start align-self-center align-items-center text-white " id="quotes">
+                        <blockquote>
+                            <h4 class="cinzel-cinzel" id="quote-text"><span class="icon-star"></span>“I was an ordinary person who studied hard. There are no miracle people. It happens they get interested in this thing and they learn all this stuff, but they’re just people.”</h4>
+                            <h5 class="text-opacity-50 text-end" id="quote-author">Richard Feynman</h5>
+                            </blockquote>
                     </div>
                 </div>
             </section>
@@ -53,7 +64,7 @@
                                         My frontend skills
                                     </h2>
                                     <h4 class="text-white-50 card-text">
-                                         HTML<hr/>CSS<hr />JavaScript<hr />Bootstrap<hr />PHP<hr />MySQL<hr />
+                                         HTML<hr/>CSS<hr />JavaScript<hr />Bootstrap<hr />PHP (work in progress)<hr />MySQL (work in progress)<hr />
                                     </h4>
                                 </div>
                             </div>
@@ -64,8 +75,9 @@
                                     <h2 class="text-white card-title cinzel-cinzel">
                                         Interested in python skills?
                                     </h2>
+                                    <img src="py.png" alt="" class="card-img">
                                     <h4 class="text-white-50 card-text my-3">
-                                         I had one course during my studies lifetime. I had began with python and javascript when I was 11 years old.
+                                         I had one course during my studies lifetime. I also learned about Matlab.
                                     </h4>
                                 </div>
                             </div>
@@ -76,8 +88,9 @@
                                     <h2 class="text-white card-title cinzel-cinzel">
                                         C++
                                     </h2>
+                                    <img src="cpp.png" alt="" class="card-img">
                                     <h4 class="text-white-50 card-text my-3">
-                                        I run through nearly three courses during studies. C++ OOP programming is available.
+                                        I run through nearly three courses during studies. C++ OOP programming is available. Example projects on my github.
                                     </h4>
                                 </div>
                             </div>
@@ -90,7 +103,7 @@
                                     </h2>
                                     <img src="20250304_220533.jpg" alt="" class="card-img">
                                     <h4 class="text-white-50 card-text">
-                                        In a while I love playing my acoustic guitar
+                                        In a while I love playing my acoustic guitar. I like reading books too.
                                     </h4>
                                 </div>
                             </div>
@@ -99,10 +112,10 @@
                             <div class="card bg-black rounded-end-3 mx-2">
                                 <div class="card-body">
                                     <h2 class="text-white card-title cinzel-cinzel">
-                                        The newest research in...
+                                        My history
                                     </h2>
                                     <h4 class="text-white-50 card-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. us arcu. Mauris iaculis nunc felis, ac scelerisque nisi efficitur at.
+                                        I began programming when I was ~10 years old. The very first I learned python and javascript. Next I gained skills in C++ and attended different kind of competitions. I also had episode with popular microcontroller platforms like arduino, raspberry pi and lego mindstorm in the very beginning.
                                     </h4>
                                 </div>
                             </div>
@@ -111,10 +124,10 @@
                             <div class="card bg-black shadow rounded-end-3 mx-2">
                                 <div class="card-body">
                                     <h2 class="text-white card-title cinzel-cinzel">
-                                        The newest research in...
+                                        'Practical side'
                                     </h2>
                                     <h4 class="text-white-50 card-text">
-                                       Hello world
+                                       I love to make different kind of projects. The most of them are on my github. There is no better thing than learning stuff and making practical project.
                                     </h4>
                                 </div>
                             </div>
@@ -126,18 +139,18 @@
                                         I like music, almost all genres
                                     </h2>
                                     <h4 class="text-white-50 card-text">
-
+                                      <a href="https://open.spotify.com/user/yu6oy4z1dfud1zs42iko5bq03" target="_blank" class="text-decoration-none"><span class="icon-spotify">Link to my spotify profile  </span></a>
                                     </h4>
                                 </div>
                             </div>
                         </article>
                     </div>
                 </section>
-                <div class="col-lg-4">
-                    <div class="row shadow" id="repo-container">
-                        <h2 class="text-white m-3 mt-0">My repos <span class="icon-github"></span></h2>
-                    </div>
-                </div>
+                <section class="col-lg-4">
+                        <div class="row shadow" id="repo-container">
+                            <h2 class="text-white m-3 mt-0">My repos <span class="icon-github"></span></h2>
+                        </div>
+                </section>
             </div>
         </main>
         <footer class="text-center bg-opacity-25 text-white-50">
@@ -145,7 +158,7 @@
             <span id="date">2023</span>
             </h1>
         </footer>
-        <aside id="socials">
+        <aside id="socials" class="text-primary">
             <a href="https://github.com/mateuszoleksy" target="_blank"><span class="icon-github"></span></a>
             <a href="https://github.com/mateuszoleksy" target="_blank"><span class="icon-linkedin"></span></a>
             <a href="https://open.spotify.com/user/yu6oy4z1dfud1zs42iko5bq03" target="_blank"><span class="icon-spotify"></span></a>
@@ -335,7 +348,51 @@
             });
         }
 
+        let elemBtnBool = 0; //when dark mode
+        function switchButton(e)
+        {
+            document.getElementById("main_div").classList.toggle("light-mode");
+            document.getElementById("socials").classList.toggle("light-mode-text");
+            elemBtnBool = ~elemBtnBool;
+            if (elemBtnBool) {
+                document.getElementById("icon_switch").classList.remove("icon-toggle-on");
+                document.getElementById("icon_switch").classList.add("icon-toggle-off");
+            } else {
+                document.getElementById("icon_switch").classList.remove("icon-toggle-off");
+                document.getElementById("icon_switch").classList.add("icon-toggle-on");
+            }
+        }
+        let quotes = [
+            {
+                "author": "Richard Feynman",
+                "text": "I was an ordinary person who studied hard. There are no miracle people. It happens they get interested in this thing and they learn all this stuff, but they’re just people."
+            },
+            {
+                "author": "Steve Jobs",
+                "text": "The people who are crazy enough to think they can change the world are the ones that do."
+            }
+
+        ]
+        let quotesCount = 1;
+
+        function changeQuote()
+        {
+            document.getElementById("quotes").classList.remove('run_animation');
+            document.getElementById("quote-author").innerText = quotes[quotesCount].author;
+            document.getElementById("quote-text").innerText = quotes[quotesCount].text;
+            document.getElementById("quotes").classList.add('run_animation');
+            quotesCount++;
+            if (quotesCount === quotes.length)
+                quotesCount = 0;
+        }
+
+        document.getElementById("quotes").addEventListener('animationend', () => {
+            document.getElementById("quotes").classList.remove('run_animation');
+            document.getElementById("quotes").removeEventListener("animationend", () => {});
+        });
+
         getGitHubRepos();
+        setInterval(changeQuote, 10000);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 </body>

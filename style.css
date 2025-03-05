@@ -41,8 +41,6 @@ header, aside, nav, main, section, article
     opacity: 70%;
     z-index: 0;
     transition-duration: 2s;
-    animation: 2s linear;
-    animation-name: slidein;
 }
 
 .card:hover
@@ -66,12 +64,37 @@ header, aside, nav, main, section, article
             0 0 151px #5271ff;
 }
 
+.run_animation
+{
+    animation: slidein 2s linear;
+}
+
 #main_div
 {
-    background-image: url("stars.jpg");
+    background-image: url("stars.jpg"); /* by Jakub Novacek on Pexels */
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: 2s linear;
+    animation-name: slidein;
+    background-position: center;
+}
+
+.light-mode
+{
+    background-image: url("desert.jpg") !important; /* by Francesco Ungaro on Pexels */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.light-mode-text
+{
+    color: black !important;
+}
+
+.light-mode-text > a
+{
+    color: black !important;
 }
 
 @keyframes flicker {
@@ -95,7 +118,7 @@ header, aside, nav, main, section, article
 {
     color: #fff !important;
     transform: skew(-10deg);
-    animation: flicker 2s infinite alternate;
+    animation: flicker 5s infinite alternate;
     text-shadow:
             0 0 7px #fff,
             0 0 10px #fff,
@@ -108,14 +131,45 @@ header, aside, nav, main, section, article
 }
 
 
+#btn_switch
+{
+    background: transparent;
+    border: 0;
+    color: white;
+}
+
+
 #my_profile
 {
     width: 300px;
     background-attachment: fixed;
     background-blend-mode: screen;
     height: auto;
+    position: relative;
     animation: 2s linear;
     animation-name: image;
+    z-index: 0;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.text-opacity-50
+{
+    opacity: 50% !important;
+}
+
+#my_profile2
+{
+    width: 300px;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    position: relative;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    animation: 2s linear;
+    animation-name: image;
+    z-index: 1;
 }
 
 @keyframes slidein {
@@ -134,10 +188,34 @@ header, aside, nav, main, section, article
 
     0% {
         rotate: 20deg;
-        transform: skew(20deg);
     }
     100% {
         rotate: 0deg;
-        transform: skew(0deg);
+    }
+}
+
+@media (min-width: 992px) {
+    #my_profile2
+    {
+        position: absolute;
+        transform: rotate(-20deg);
+        left: 50%;
+        top: 15%;
+        width: 150px;
+    }
+    #my_profile
+    {
+        width: 200px
+    }
+}
+
+@media (min-width: 1200px) {
+    #my_profile
+    {
+        width: 300px;
+    }
+    #my_profile2
+    {
+        width: 200px;
     }
 }
